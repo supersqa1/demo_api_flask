@@ -9,6 +9,8 @@ RUN pip install -r requirements.txt
 
 COPY . /demoapi_flask_ssqa
 
+EXPOSE 5001
+
 ENTRYPOINT  [ "python" ]
 
 CMD ["/demoapi_flask_ssqa/run.py"]
